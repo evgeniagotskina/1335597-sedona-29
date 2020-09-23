@@ -1,0 +1,276 @@
+/* Variables */
+:root{
+    --black:#000000;
+    --light-black:#333333;
+    --light-blue:#81B3D2;
+    --blue:#669EC0;
+    --dark-blue:#5496BD;
+    --vector-blue:#81B3D3;
+    --light-brown:#766357;
+    --brown:#604E43;
+    --dark-brown:#503E33;
+    --ultra-light-grey:#FFFFFF;
+    --medium-light-grey:#EEEEEE;
+    --light-grey:#F2F2F2;
+    --grey:#EBEBEB;
+    --icon-grey:#A9A9A9;
+    --border-grey:#A5A5A5;
+}
+
+/* Global */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: uppercase;
+    background-color: var(--ultra-light-grey);    
+    background-position: top center;   
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Main navigation */
+
+  .main-navigation{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: var(--ultra-light-grey);
+    color:var(--black)
+
+  }
+  .site-navigation{
+      list-style: none;
+  }
+  
+  /* User navigation */
+
+  .site-navigation a{
+      color:var(--black);
+  }
+  .site-navigation a:hover{
+      color:var(--light-blue);
+  }
+  .site-navigation a:active{
+      color:var(--black)
+      
+      opacity: 0.3;
+  }
+
+  /* navigation-logo*/
+
+  .main-navigation-logo{
+    width: 138px;
+    height: 70px;
+    background-color:var(--vector-blue) ;
+  }
+
+  /*Main content form*/
+  .form{
+      background-color:var(--brown);
+      color:var(--ultra-light-grey);
+      align-items: center;
+      font-style: normal;
+  }
+  .form h2{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .form label{
+    font-weight: normal;
+    
+  }
+
+/*Button-form*/
+
+.button-search{
+    width: 137px;
+    height: 36px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;   
+    font-style: normal;
+    font-weight: normal;   
+    color:var(--ultra-light-grey);
+    background: none;   
+}
+.button-search:hover{
+    background: var(--ultra-light-grey);
+    color:var(--black);
+}
+
+/*Main-sorter*/
+
+.sorter{
+    border-bottom: 1px solid #E5E5E5;
+}
+.sorter-h2 {    
+    font-size: 21px;
+    line-height: 26px;
+}
+.sorter-list {
+    list-style: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    
+}
+.sorter-list a,
+.sorter-list a:visited{
+    color:var(--black);
+    border-bottom: 1px dashed #81B3D2;
+}
+.sorter-list a:hover{
+    color:var(--light-blue);
+}
+.sorter-list a:active{
+    color:var(--black)
+}
+.sorter-up{
+    list-style: none;
+    background: #CACACA;
+}
+.sorter-up a:hover{
+ background: var(--black);
+}
+.sorter-up a:active{
+    background: var(--light-blue);
+}
+
+/*Hotels-card*/
+
+.hotel{
+    border-bottom: 1px solid #E5E5E5;
+}
+.hotel h2{
+    font-size: 21px;
+    line-height: 26px;
+}
+.hotel h2:hover{
+    color:var(--light-blue);
+}
+.hotel h2:active{
+    color:var(--black);
+    opacity: 0.3;
+}
+.photo-hotel{
+    width: 135px;
+    height: 90px;
+}
+.type,
+.price{
+    font-weight: normal;
+    color:var(--light-black);
+}
+
+/*Holet-card-button*/
+
+.button-detail{
+    width: 110px;
+    height: 27px;
+    background: var(--light-blue);
+    color: var(--ultra-light-grey);
+}
+.button-detail:hover{
+    background: var(--blue);
+}
+.button-detail:active{
+    background: var(--dark-blue);
+    opacity: 0.3;
+}
+.button-book{
+    width: 142px;
+    height: 27px;
+    background: var(--light-brown);
+    color: var(--ultra-light-grey);
+}
+.button-book:hover{
+    background: var(--brown);
+}
+.button-book:active{
+    background: var(--dark-brown);
+    opacity: 0.3;
+}
+
+/*Hotel-card-rating*/
+
+.stars{
+    background: var(--light-blue);
+}
+.rating{
+    width: 110px;
+    height: 27px;
+    background: var(--light-grey);
+    font-weight: normal;
+    color:#666666;
+}
+
+/*Footer*/
+
+.page-footer{
+    
+    background: rgba(255, 255, 255, 0.9);
+}
+.footer-contact-phone{
+    color:inherit;
+}
+.footer-contact{
+    list-style: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color:var(--black);
+}
+/*Footer-social*/
+
+.footer-social ul {
+    list-style: none;
+  }
+
+.social-button {
+    color: inherit;
+    color:var(--light-blue);
+  }
+.social-button:hover{
+
+    color:var(--blue);    
+} 
+.social-button:active{
+
+    color:var(--dark-blue);
+} 
+
+/*Footer-copyright*/
+
+.footer-copyright{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--black)
+}
+.copyright-logo:hover{
+    color:var(--light-blue);
+}
+.copyright-logo:active{
+    color:var(--black)
+    mix-blend-mode: normal;
+    opacity: 0.3; 
+}
