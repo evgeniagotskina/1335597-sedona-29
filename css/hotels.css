@@ -15,6 +15,7 @@
     --grey:#EBEBEB;
     --icon-grey:#A9A9A9;
     --border-grey:#A5A5A5;
+    --dark-grey:#CACACA;
 }
 
 /* Global */
@@ -79,7 +80,8 @@ body {
 
   /*Main content form*/
   .form{
-      background-color:var(--brown);
+      background-image:url('../img/background-form.jpg');
+      background-repeat: no-repeat;      
       color:var(--ultra-light-grey);
       align-items: center;
       font-style: normal;
@@ -140,16 +142,42 @@ body {
 .sorter-list a:active{
     color:var(--black)
 }
-.sorter-up{
+.sorter-up {
     list-style: none;
-    background: #CACACA;
 }
-.sorter-up a:hover{
- background: var(--black);
+.sorter-up a {
+    display: inline-block;
+    padding:10px;
 }
-.sorter-up a:active{
-    background: var(--light-blue);
+.arrowdown {
+    width: 0; 
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid var(--dark-grey);
 }
+.arrowup {
+    width: 0; 
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid var(--dark-grey);
+}
+.arrowdown:hover{
+    border-top-color: var(--light-blue);
+}
+.arrowdown:active{
+    border-top-color: var(--black);
+}
+                                        
+.arrowup:hover{
+    border-bottom-color: var(--light-blue);
+}
+.arrowup:active{
+    border-bottom-color: var(--black);
+}
+
+
 
 /*Hotels-card*/
 
@@ -209,7 +237,25 @@ body {
 /*Hotel-card-rating*/
 
 .stars{
-    background: var(--light-blue);
+    background: var(--ultra-light-grey);
+}
+.stars-2{
+    width: 42px;
+    height: 17px;
+    background-image: url('../img/star.svg');
+    background-repeat: repeat-x;
+}
+.stars-3{
+    width: 66px;
+    height: 17px;
+    background-image: url('../img/star.svg');
+    background-repeat: repeat-x;
+}
+.stars-4{
+    width: 90px;
+    height: 17px;
+    background-image: url('../img/star.svg');
+    background-repeat: repeat-x;
 }
 .rating{
     width: 110px;
@@ -243,16 +289,34 @@ body {
   }
 
 .social-button {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
     color: inherit;
-    color:var(--light-blue);
+    background-color:var(--light-blue);
   }
+  .social-button.twitter{
+      background-image:url('../img/twitter.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+  }
+  .social-button.facebook{
+    background-image:url('../img/fb-icon.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.social-button.youtube{
+    background-image:url('../img/youtube.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 .social-button:hover{
 
-    color:var(--blue);    
+    background-color:var(--blue);    
 } 
 .social-button:active{
 
-    color:var(--dark-blue);
+    background-color:var(--dark-blue);
 } 
 
 /*Footer-copyright*/
