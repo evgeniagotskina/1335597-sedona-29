@@ -39,13 +39,88 @@ body {
     max-width: 100%;
     height: auto;
   }
-
+.page{
+    height: 100%;
+}
+.page-body {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+  }
   
   main {
     width: 1200px;
-    
-  }
+      }
+  
+  /*GRID*/
 
+  .container{
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0 10px;
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 725px auto 765px;
+  }
+  .main-part1{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+
+  }
+  .main-part2{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start:2 ;
+    grid-row-end: 3;
+  }
+  .main-part3{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start:3;
+    grid-row-end: 4;
+  }
+      .main-part1-content{    
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 509px 216px;
+     }
+      .logo-container{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start:1 ;
+    grid-row-end: 2;
+    }
+      .about-sedona{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start:2 ;
+    grid-row-end: 3; 
+    }
+    .reason-part1{
+    display:grid;
+    grid-template-columns: 1fr 2fr;        
+    }
+.reason-part2{
+display: grid;
+grid-template-columns: 1fr 2fr;
+}
+.reason-part3{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+   } 
+.main-part3-content{
+    display: grid;
+    grid-template-rows: 291px 473px;
+}
+.main-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
   /* Main navigation */
 
   .main-navigation{
@@ -59,6 +134,8 @@ body {
   }
   .site-navigation{
       list-style: none;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   
   /* User navigation */
@@ -74,17 +151,20 @@ body {
       mix-blend-mode: normal;
       opacity: 0.3;
   }
+  
+  /*header-logo*/
 
-  /* navigation-logo*/
-
-  .main-navigation-logo{
-    width: 138px;
-    height: 70px;
-    background-color:var(--vector-blue) ;
+.header-logo{
+position: absolute;
+top: 0;
+left: 531px;
+    
   }
+ 
 /*Main picture*/
+
 .logo-container{
-    width: 1200px;
+       width: 1200px;
     height: 509px;
     text-align: center;
     background-image:url('../img/logo_bg_shape.svg'),url('../img/logo_bg_img.jpg');
@@ -110,6 +190,13 @@ body {
     line-height: 26px;
     color:var(--light-black);
     text-align: center;
+}
+.about-sedona{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start:2 ;
+    grid-row-end: 3;
+    
 }
 
 /* /*Main reasons */
@@ -159,6 +246,8 @@ body {
 
     background-color:var(--ultra-light-grey) ;
     box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .recommendation-item{
     list-style: none;
