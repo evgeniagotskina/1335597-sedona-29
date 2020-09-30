@@ -243,19 +243,19 @@ body {
     width: 42px;
     height: 17px;
     background-image: url('../img/star.svg');
-    background-repeat: repeat-x;
+    background-repeat:space;
 }
 .stars-3{
     width: 66px;
     height: 17px;
     background-image: url('../img/star.svg');
-    background-repeat: repeat-x;
+    background-repeat: space;
 }
 .stars-4{
     width: 90px;
     height: 17px;
     background-image: url('../img/star.svg');
-    background-repeat: repeat-x;
+    background-repeat: space;
 }
 .rating{
     width: 110px;
