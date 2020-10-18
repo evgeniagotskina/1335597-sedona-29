@@ -54,11 +54,6 @@ img {
     height: auto;
 }
 
-.main-header {
-    width: 1200px;
-    height: 56px;
-}
-
 
 /*GRID*/
 
@@ -68,7 +63,7 @@ img {
     padding: 0 10px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 217px 86px 453px;
+    grid-template-rows: 217px 86px 1fr;
 }
 
 .form-consist {
@@ -78,10 +73,7 @@ img {
     padding: 0 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-}
-
-.form-consist label {
-    display: block;
+    outline: 3px solid red;
 }
 
 .sorter {
@@ -124,13 +116,27 @@ img {
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .form-consist fieldset {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    outline: 3px solid green;
+}
+
+.form-consist-infrastructure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    outline: 3px solid yellow;
+}
+
+.form-consist-type {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    outline: 3px solid yellow;
 }
 
 .price-controls {
@@ -154,6 +160,23 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.footer-social ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-copyright {
+    display: flex;
+}
+
+.footer-contact p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -218,6 +241,7 @@ img {
 
 .main-header {
     position: relative;
+    outline: 3 px dashed salmon;
 }
 
 .header-logo {
@@ -236,6 +260,7 @@ img {
     color: var(--ultra-light-grey);
     align-items: center;
     font-style: normal;
+    outline: 3px solid purple;
 }
 
 .visually-hidden {
@@ -259,8 +284,9 @@ img {
 
 .form-consist-infrastructure legend {
     display: block;
-    margin-top: 26px;
+    padding-top: 26px;
     margin-left: 72px;
+    margin-bottom: 24px;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
@@ -272,6 +298,26 @@ img {
     list-style: none;
     line-height: 21px;
     margin-left: 72px;
+}
+
+.form-consist-type legend {
+    display: block;
+    padding-top: 26px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.form-consist-type ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 21px;
+}
+
+.filter-option {
+    margin-bottom: 25px;
 }
 
 .form label {

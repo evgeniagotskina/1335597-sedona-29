@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/hotels.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
+
     <header class="main-header">
         <nav class="main-navigation">
             <ul class="site-navigation">
@@ -25,6 +26,7 @@
         </a>
     </header>
 
+
     <main class="main-container">
         <section class="form">
             <form action="https//:sedona.com/hotels" method="GET">
@@ -32,17 +34,17 @@
                     <fieldset class="form-consist-infrastructure">
                         <legend>инфраструктура:</legend>
                         <ul>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <input class="visually-hidden" type="checkbox" name="basseyn" id="pool" checked>
                                 <label for="pool">бассейн</label>
 
                             </li>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <input class="visually-hidden" type="checkbox" name="parcovka" id="parcing">
                                 <label for="parcing">парковка</label>
 
                             </li>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
                                 <label for="wi-fi">wi-fi</label>
 
@@ -50,18 +52,19 @@
                         </ul>
                     </fieldset>
 
-                    <fieldset>
+
+                    <fieldset class="form-consist-type">
                         <legend>тип жилья:</legend>
                         <ul>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <input class="visually-hidden" type="checkbox" name="gostiniza" id="gostiniza" checked>
                                 <label>гостиница</label>
                             </li>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
                                 <label>отель</label>
                             </li>
-                            <li>
+                            <li class="filter-option filter-checkbox">
                                 <input class="visually-hidden" type="checkbox" name="apartamenti" id="apartamenti" checked>
                                 <label>апартаменты</label>
                             </li>
@@ -119,7 +122,7 @@
         </section>
         <section class="hotel-container hotel-grid">
             <div class="hotel">
-                <img class="hotel-img " src="img/Amara-photo.jpg " class="pfoto-hotel " width="135 " height="90 ">
+                <img class="hotel-img " src="img/Amara-photo.jpg " class="photo-hotel " width="135 " height="90 ">
                 <div class="hotel-card ">
                     <h2>amara resort & spa</h2>
                     <div class="hotel-card-category">
@@ -138,7 +141,7 @@
             </div>
 
             <div class="hotel ">
-                <img class="hotel-img " src="img/Desert-photo.jpg " class="pfoto-hotel " width="135 " height="90 ">
+                <img class="hotel-img " src="img/Desert-photo.jpg " class="photo-hotel " width="135 " height="90 ">
 
                 <div class="hotel-card ">
                     <h2>desert quail inn</h2>
@@ -158,7 +161,7 @@
 
             </div>
             <div class="hotel ">
-                <img class="hotel-img " src="img/Villars-photo.jpg " class="pfoto-hotel " width="135 " height="90 ">
+                <img class="hotel-img " src="img/Villars-photo.jpg " class="photo-hotel " width="135 " height="90 ">
                 <div class="hotel-card ">
                     <h2>vilas at poco diablo</h2>
                     <div class="hotel-card-category">

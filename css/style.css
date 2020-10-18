@@ -79,7 +79,6 @@ main {
 .site-navigation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .footer-social ul {
