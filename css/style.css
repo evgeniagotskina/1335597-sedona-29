@@ -50,6 +50,7 @@ img {
 .page-body {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 0;
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
@@ -667,12 +668,11 @@ main {
     padding: 0 10px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 217px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-.form-consist {
+.form-container {
     width: 1200px;
-    height: 217px;
     margin: 0 auto;
     padding: 0 10px;
     display: grid;
@@ -710,27 +710,6 @@ main {
 
 /*FLEX HOTELS*/
 
-.form-consist fieldset {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    outline: 3px solid green;
-}
-
-.form-consist-infrastructure {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    outline: 3px solid yellow;
-}
-
-.form-consist-type {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    outline: 3px solid yellow;
-}
-
 .price-controls {
     display: flex;
     justify-content: space-between;
@@ -758,15 +737,16 @@ main {
 /*Main content form*/
 
 .form {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
     background-image: url('../img/background-form.jpg');
     background-repeat: no-repeat;
     color: var(--ultra-light-grey);
     align-items: center;
     font-style: normal;
     outline: 3px solid purple;
+}
+
+.form-container fieldset {
+    display: block;
 }
 
 .visually-hidden {
@@ -782,53 +762,8 @@ main {
     overflow: hidden;
 }
 
-.form-consist fieldset {
-    padding: 0;
-    margin: 0;
-    border: none;
-}
 
-.form-consist-infrastructure legend {
-    display: block;
-    padding-top: 26px;
-    margin-left: 72px;
-    margin-bottom: 24px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.form-consist-infrastructure ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    line-height: 21px;
-    margin-left: 72px;
-}
-
-.form-consist-type legend {
-    display: block;
-    padding-top: 26px;
-    margin-bottom: 24px;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-}
-
-.form-consist-type ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    line-height: 21px;
-}
-
-.filter-option {
-    margin-bottom: 25px;
-}
-
-.form label {
-    font-weight: normal;
-}
+/*FORM*/
 
 .filter-item-range {
     margin: 0;
