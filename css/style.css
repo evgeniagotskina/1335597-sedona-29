@@ -635,13 +635,22 @@ main {
     color: var(--black)
 }
 
-.copyright-logo:hover {
-    color: var(--light-blue);
+.footer-copyright p {
+    margin-top: 46px;
+    margin-left: 90px;
+    margin-right: 10px;
 }
 
-.copyright-logo:active {
-    color: var(--black)l;
-    opacity: 0.3;
+.footer-copyright a {
+    margin-top: 36px;
+}
+
+.copyright-logo:hover path {
+    fill: #81B3D2;
+}
+
+.copyright-logo:active path {
+    fill: #BDBBBC;
 }
 
 
@@ -688,7 +697,6 @@ main {
     padding: 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    outline: 3px solid red;
     grid-gap: 40px;
 }
 
@@ -705,7 +713,7 @@ main {
 .hotel-container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 0;
 }
 
 .hotel-grid {
@@ -753,7 +761,6 @@ main {
     color: var(--ultra-light-grey);
     align-items: center;
     font-style: normal;
-    outline: 3px solid purple;
     background-size: cover;
 }
 
@@ -796,6 +803,34 @@ main {
 
 .form-consist li:last-child {
     margin-bottom: 0;
+}
+
+.filter-option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 37px;
+}
+
+.filter-input-checkbox+label::before {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    background-image: url('../img/checkbox-off.svg');
+}
+
+.filter-input-checkbox:checked+label::after {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url('../img/checkbox-on.svg');
 }
 
 .filter-item-range {
@@ -1030,7 +1065,8 @@ main {
     font-size: 21px;
     line-height: 26px;
     margin-top: 0;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
+    padding-top: 0;
 }
 
 .hotel h2:hover {
@@ -1072,6 +1108,14 @@ main {
     opacity: 0.3;
 }
 
+.button-general {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 17px;
+    padding-right: 16px;
+    line-height: 21px;
+}
+
 .button-book {
     width: 142px;
     height: 27px;
@@ -1088,6 +1132,27 @@ main {
     opacity: 0.3;
 }
 
+.hotel-card-buttons {
+    margin-top: auto;
+}
+
+.hotel-card-category {
+    margin-bottom: auto;
+    line-height: 21px;
+}
+
+.hotel-card-category .price-hotel {
+    margin-left: 33px;
+}
+
+.hotel-card-category .price-motel {
+    margin-left: 58px;
+}
+
+.hotel-card-category .price-appartaments {
+    margin-left: 17px;
+}
+
 
 /*Hotel-card-rating*/
 
@@ -1101,6 +1166,7 @@ main {
     height: 17px;
     background-image: url('../img/star.svg');
     background-repeat: space;
+    margin-left: auto;
 }
 
 .stars-3 {
@@ -1108,6 +1174,7 @@ main {
     height: 17px;
     background-image: url('../img/star.svg');
     background-repeat: space;
+    margin-left: auto;
 }
 
 .stars-4 {
@@ -1115,6 +1182,7 @@ main {
     height: 17px;
     background-image: url('../img/star.svg');
     background-repeat: space;
+    margin-left: auto;
 }
 
 .rating {
@@ -1126,6 +1194,9 @@ main {
     display: block;
 }
 
-.hotel-rating {
-    margin-right: 73px;
+.hotel-rating .rating {
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 12px;
 }
