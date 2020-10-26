@@ -17,6 +17,7 @@
     --icon-grey: #A9A9A9;
     --border-grey: #A5A5A5;
     --dark-grey: #CACACA;
+    --range-grey: #ABABAB;
 }
 
 
@@ -931,7 +932,19 @@ main {
 .min-price-container,
 .max-price-container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.min-price-container input,
+.max-price-container input {
+    text-align: left;
+    width: 50px;
+}
+
+.min-price-container label,
+.max-price-container label {
+    margin-left: 40px;
 }
 
 
@@ -945,6 +958,9 @@ main {
     border-radius: 2px;
     font-style: normal;
     font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
     color: var(--ultra-light-grey);
     background: none;
 }
@@ -1063,9 +1079,9 @@ main {
 
 .hotel h2 {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 21px;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     padding-top: 0;
 }
 
