@@ -888,6 +888,7 @@ main {
     border-radius: 50%;
     box-shadow: 0 2px rgba(171, 171, 171, 0.3);
     cursor: pointer;
+    box-sizing: content-box;
 }
 
 .range-controls .toggle-min {}
@@ -963,6 +964,7 @@ main {
     text-transform: uppercase;
     color: var(--ultra-light-grey);
     background: none;
+    margin-left: 90px;
 }
 
 .button-search-hotels:hover {
