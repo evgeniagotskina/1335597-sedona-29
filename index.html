@@ -152,30 +152,52 @@
         </section>
     </footer>
     <section class="holet_search_form">
-        <h2>форма поиска гостиниц</h2>
+        <h2 class="visually-hidden">форма поиска гостиниц</h2>
         <form action="https//:sedona.com/hotels" method="GET">
             <div class="date">
                 <label for="arrival-date">Дата заезда:</label>
-                <input type="date" name="arrival-date" id="arrival-date" value="24 апреля 2017">
+                <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
             </div>
             <div class="date">
                 <label for="departure-date">Дата выезда:</label>
-                <input type="date" name="departure-date" id="departure-date" value="4 июля 2017">
+                <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
             </div>
-            <div class="input-number">
-                <label for="quantity-adults">Взрослые:</label>
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="1" max="10" id="quantity-adults" name="quantity-adults" value="2">
-                <input type="button" value="+" id="button_plus">
-            </div>
-            <div class="input-number">
-                <label for="quantity-child">Дети:</label>
-                <input type="button" value="-" id="button_minus">
-                <input type="number" step="1" min="0" max="10" id="quantity-child" name="quantity-child" value="0">
-                <input type="button" value="+" id="button_plus">
+            <div class="input-number-grid">
+                <div class="input-number">
+                    <label for="quantity-adults">Взрослые:</label>
+                    <div class="input-number-style">
+                        <button type='button'>
+                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="12" height="3" fill="#A9A9A9"/>
+                            </svg>
+                    </button>
+                        <input type="number" step="1" min="1" max="10" id="quantity-adults" name="quantity-adults" value="2">
+                        <button type='button'>
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+                <div class="input-number">
+                    <label for="quantity-child">Дети:</label>
+                    <div class="input-number-style">
+                        <button type='button'>
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="12" height="3" fill="#A9A9A9"/>
+                        </svg>
+                </button>
+                        <input type="number" step="1" min="0" max="10" id="quantity-child" name="quantity-child" value="0">
+                        <button type='button'>
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                    </svg>
+                </button>
+                    </div>
+                </div>
             </div>
 
-            <button type="button">найти</button>
+            <button class="button-hidden-form" type="button">найти</button>
         </form>
     </section>
 
