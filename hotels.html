@@ -31,6 +31,7 @@
         <section class="form">
             <form action="https//:sedona.com/hotels" method="GET">
                 <div class="form-container">
+
                     <fieldset class="form-consist">
                         <legend>инфраструктура:</legend>
                         <ul>
@@ -47,7 +48,6 @@
                             <li class="filter-option filter-checkbox">
                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
                                 <label for="wi-fi">wi-fi</label>
-
                             </li>
                         </ul>
                     </fieldset>
@@ -57,16 +57,18 @@
                         <legend>тип жилья:</legend>
                         <ul>
                             <li class="filter-option filter-checkbox">
-                                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gostiniza" id="gostiniza" checked>
-                                <label>гостиница</label>
-                            </li>
-                            <li class="filter-option filter-checkbox">
                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
-                                <label>отель</label>
+                                <label for="hotel">гостиница</label>
+
                             </li>
                             <li class="filter-option filter-checkbox">
-                                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartamenti" id="apartamenti" checked>
-                                <label>апартаменты</label>
+                                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="motel">
+                                <label for="motel">мотель</label>
+
+                            </li>
+                            <li class="filter-option filter-checkbox">
+                                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="appartament" id="appartament">
+                                <label for="appartament">аппартаменты</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -82,7 +84,7 @@
                                 <div class="white-line"></div>
                                 <div class="max-price-container">
                                     <label class="max-price" for="max-price">до</label>
-                                    <input type="text" name="max-price" id="max-price" value="15000">
+                                    <input type="text" name="max-price" id="max-price" value="3000">
                                 </div>
 
 
