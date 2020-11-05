@@ -457,6 +457,7 @@
         text-align: center;
         text-transform: uppercase;
         color: var(--ultra-light-grey);
+        border: none;
     }
     
     .button-search:hover {
@@ -468,9 +469,8 @@
     }
     /*Map*/
     
-    .map {
-        width: 1200px;
-        height: 474px;
+    .maps {
+        display: block;
     }
     /*Footer*/
     
@@ -488,7 +488,7 @@
     .footer-contact p {
         display: grid;
         grid-gap: 9px;
-        margin-top: 16px;
+        margin-top: 20px;
     }
     
     .footer-contact {
@@ -527,7 +527,7 @@
     
     .social-button-center {
         margin: auto;
-        padding-top: 29px;
+        padding-top: 36px;
         padding-bottom: 36px;
     }
     
@@ -537,7 +537,8 @@
         height: 48px;
         color: inherit;
         background-color: var(--light-blue);
-        margin-right: 6px;
+        margin-right: 3px;
+        margin-left: 3px;
     }
     
     .social-button.twitter {
@@ -578,13 +579,13 @@
     }
     
     .footer-copyright p {
-        margin-top: 42px;
+        margin-top: 48px;
         margin-left: 90px;
         margin-right: 9px;
     }
     
     .footer-copyright a {
-        margin-top: 32px;
+        margin-top: 37px;
     }
     
     .copyright-logo:hover path {
@@ -643,12 +644,12 @@
         grid-template-columns: auto 1fr auto;
         column-gap: 29px;
     }
-    /*FLEX HOTELS*/
     
     .price-controls {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
+    /*FLEX HOTELS*/
     
     .sorter-list {
         display: flex;
@@ -788,6 +789,10 @@
         position: relative;
     }
     
+    .range-controls .range-container {
+        position: relative;
+    }
+    
     .range-controls .scale {
         width: 316px;
         height: 2px;
@@ -801,6 +806,8 @@
         height: 2px;
         background-color: var(--ultra-light-grey);
         position: absolute;
+        top: 0;
+        left: 0;
     }
     
     .range-controls .toggle {
@@ -864,9 +871,12 @@
         width: 50px;
     }
     
-    .min-price-container label,
-    .max-price-container label {
+    .min-price-container label {
         margin-left: 43px;
+    }
+    
+    .max-price-container label {
+        margin-left: 33px;
     }
     /*Button-form*/
     
@@ -1019,6 +1029,10 @@
         padding-bottom: 30px;
         padding-left: 72px;
         padding-right: 72px;
+    }
+    
+    .hotel-name {
+        color: var(--black);
     }
     
     .hotel h2 {
@@ -1226,8 +1240,8 @@
     
     .input-number-grid {
         display: grid;
-        grid-gap: 47px;
-        grid-template-columns: 1fr 182px;
+        grid-gap: 53px;
+        grid-template-columns: 1fr 178px;
         margin-bottom: 56px;
     }
     
@@ -1245,16 +1259,19 @@
         font-size: 14px;
         line-height: 26px;
         text-align: center;
-        width: 66px;
+        width: 42px;
     }
     
     .input-number-style {
-        display: flex;
+        display: grid;
+        grid-template-columns: 36px 42px 36px;
         height: 38px;
     }
     
     .input-number-style button {
         border: none;
+        padding-left: 12px;
+        padding-top: 7px;
     }
     
     .input-number svg {
