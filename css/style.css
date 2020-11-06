@@ -466,6 +466,7 @@
     
     .maps {
         display: block;
+        border: 0;
     }
     /*Footer*/
     
@@ -1178,7 +1179,7 @@
     }
     
     .date {
-        margin-bottom: 29px;
+        margin-bottom: 30px;
         position: relative;
         font-weight: bold;
         font-size: 14px;
@@ -1266,7 +1267,7 @@
     .input-number-style button {
         border: none;
         padding-left: 12px;
-        padding-top: 7px;
+        padding-top: 2px;
     }
     
     .input-number svg {
@@ -1309,8 +1310,4 @@
     
     .container-form-position {
         position: relative;
-    }
-    
-    .cotainer-form-position .maps {
-        border: none;
     }
