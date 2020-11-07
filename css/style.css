@@ -18,6 +18,14 @@
         --border-grey: #A5A5A5;
         --dark-grey: #CACACA;
         --range-grey: #ABABAB;
+        --bacground-color: #add4e0;
+        --background-footer: rgba(255, 255, 255, 0.9);
+        --page-shadow: rgba(0, 1, 1, 0.2);
+        --copyright-brown: #BDBBBC;
+        --sorter-border: #E5E5E5;
+        --range-controls-shadow: rgba(171, 171, 171, 0.3);
+        --button-active: rgba(255, 255, 255, 0.3);
+        --hotel-search-shadow: rgba(0, 1, 1, 0.15);
     }
     /* Global */
     
@@ -57,7 +65,7 @@
         min-height: 100%;
         display: grid;
         align-content: start;
-        box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+        box-shadow: 0px 5px 15px var(--page-shadow);
     }
     
     main {
@@ -217,6 +225,10 @@
         color: var(--black);
         opacity: 0.3;
     }
+    
+    .site-navigation a:visited {
+        color: var(--light-brown);
+    }
     /*header-logo*/
     
     .main-header {
@@ -238,6 +250,7 @@
         background-image: url('../img/logo_bg_shape.svg'), url('../img/logo_bg_img.jpg');
         background-position: bottom center, center center;
         background-repeat: no-repeat, no-repeat;
+        background-color: var(--bacground-color);
     }
     
     .logo-container img {
@@ -461,6 +474,7 @@
     
     .button-search:active {
         background-color: var(--dark-brown);
+        color: var(--button-active);
     }
     /*Map*/
     
@@ -471,7 +485,7 @@
     /*Footer*/
     
     .page-footer {
-        background: rgba(255, 255, 255, 0.9);
+        background: var(--background-footer);
         padding-right: 72px;
         padding-left: 72px;
     }
@@ -544,7 +558,7 @@
     }
     
     .social-button.facebook {
-        background-image: url('../img/fb-icon.svg');
+        background-image: url('../img/fb_icon.svg');
         background-position: center center;
         background-repeat: no-repeat;
     }
@@ -585,11 +599,11 @@
     }
     
     .copyright-logo:hover path {
-        fill: #81B3D2;
+        fill: var(--light-blue);
     }
     
     .copyright-logo:active path {
-        fill: #BDBBBC;
+        fill: var(--copyright-brown);
     }
     /* CSS PAGE HOTELS*/
     /*GRID HOTELS*/
@@ -616,7 +630,7 @@
     }
     
     .sorter {
-        border-bottom: 1px solid #E5E5E5;
+        border-bottom: 1px solid var(--sorter-border);
         width: 1200px;
         margin: 0 auto;
         padding: 0 0;
@@ -815,7 +829,7 @@
         border: 8px solid var(--ultra-light-grey);
         background-color: var(--range-grey);
         border-radius: 50%;
-        box-shadow: 0 2px rgba(171, 171, 171, 0.3);
+        box-shadow: 0 2px var(--range-controls-shadow);
         cursor: pointer;
         box-sizing: content-box;
     }
@@ -879,7 +893,7 @@
     .button-search-hotels {
         width: 137px;
         height: 36px;
-        border: 2px solid #FFFFFF;
+        border: 2px solid var(--ultra-light-grey);
         box-sizing: border-box;
         border-radius: 2px;
         font-style: normal;
@@ -948,7 +962,7 @@
     .sorter-list a,
     .sorter-list a:visited {
         color: var(--black);
-        border-bottom: 1px dashed #81B3D2;
+        border-bottom: 1px dashed var(--light-blue);
         opacity: 0.3;
     }
     
@@ -1020,7 +1034,7 @@
     /*Hotels-card*/
     
     .hotel {
-        border-bottom: 1px solid #E5E5E5;
+        border-bottom: 1px solid var(--sorter-border);
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 72px;
@@ -1073,7 +1087,7 @@
     
     .button-detail:active {
         background: var(--dark-blue);
-        opacity: 0.3;
+        color: var(--button-active);
     }
     
     .button-general {
@@ -1097,7 +1111,7 @@
     
     .button-book:active {
         background: var(--dark-brown);
-        opacity: 0.3;
+        color: var(--button-active);
     }
     
     .hotel-card-buttons {
@@ -1172,7 +1186,7 @@
         width: 568px;
         padding: 55px 55px;
         background-color: var(--ultra-light-grey);
-        box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+        box-shadow: 0px 7px 15px var(--hotel-search-shadow);
         position: absolute;
         top: 0;
         left: 315px;
@@ -1305,7 +1319,7 @@
     
     .button-hidden-form:active {
         background-color: var(--dark-blue);
-        color: rgba(255, 255, 255, 0.3)
+        color: var(--button-active);
     }
     
     .container-form-position {
